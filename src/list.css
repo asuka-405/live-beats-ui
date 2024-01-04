@@ -1,0 +1,45 @@
+.music-list {
+    width: 60%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    flex-direction: column;
+    margin-top: 3em;
+}
+
+.music {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "cover title duration";
+    width: 100%;
+    margin-bottom: 1em;
+    height: 50px;
+    max-width: 800px;
+    padding: 0.5em;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+.cover {
+    background-image: url("https://loremflickr.com/480/480/abstract");
+    height: 50px;
+    aspect-ratio: 1/1;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.track {
+    margin-top: 0.5em;
+}
+
+.artist {
+    margin-top: 1em;
+}
